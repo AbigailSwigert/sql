@@ -81,3 +81,26 @@ UPDATE tekcampers SET education = 'High School Diploma' WHERE last_name = 'Keese
 UPDATE tekcampers SET education = 'Some College' WHERE last_name = 'Betts';
 
 SELECT * FROM tekcampers;
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Abigail'; -- decided to keep these more simplified accross the board
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Adam';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Jose';
+
+UPDATE tekcampers SET education = 'High School Diploma' WHERE first_name = 'Kevin'; -- used first_name because it's true for both Kevins, matched 2 but only updated 1 since the other was aleady set
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'Julian';
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'Christian';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Jessica';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Gotham';
+
+UPDATE tekcampers SET education = 'Masters Degree' WHERE first_name = 'Vimala';
+
+UPDATE tekcampers SET education = 'Associates Degree' WHERE first_name = 'Phoenix';
+
+UPDATE tekcampers SET education = 'Doctorate' WHERE first_name = 'Norita';
+
