@@ -104,3 +104,24 @@ UPDATE tekcampers SET education = 'Associates Degree' WHERE first_name = 'Phoeni
 
 UPDATE tekcampers SET education = 'Doctorate' WHERE first_name = 'Norita';
 
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Sabitha';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Katherine';
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'Marcelo';
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'Cody';
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'George';
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'Justin';
+
+UPDATE tekcampers SET education = 'High School Diploma' WHERE first_name = 'Zachary';
+
+UPDATE tekcampers SET education = 'Associates Degree' WHERE first_name = 'Caleb';
+
+UPDATE tekcampers SET education = 'Masters Degree' WHERE last_name = 'Choat';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE last_name = 'Castiglione';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE last_name = 'Bozarov';
