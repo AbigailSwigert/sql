@@ -170,3 +170,60 @@ SELECT * FROM tekcampers WHERE education = 'Associates Degree';
 SELECT * FROM tekcampers WHERE education <> 'Associates Degree' AND education <> 'Bachelors Degree' AND education <> 'Masters Degree' AND education <> 'Doctorate' OR education IS NULL; -- includes NULL
 
 SELECT * FROM tekcampers WHERE education <> 'Associates Degree' AND education <> 'Bachelors Degree' AND education <> 'Masters Degree' AND education <> 'Doctorate'; -- Does not include NULL
+
+-- Adding TA table
+
+DESC tekcampers; -- Pulled up tekcampers so I could see exactly how it was set up
+
+CREATE TABLE `ta-emilios`(
+id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(20),
+last_name VARCHAR(20),
+gender CHAR(1),
+education VARCHAR(20));
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'abigail';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'adam';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'christian';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'devon';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'jose';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'michael';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'phoenix';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'gabe';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'julian';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'marcelo';
+
+INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
+SELECT first_name, last_name, gender, education FROM tekcampers
+WHERE first_name = 'monica';
+
+SELECT * FROM `ta-emilios`;
