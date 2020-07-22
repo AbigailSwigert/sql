@@ -298,3 +298,9 @@ UPDATE tekcampers SET bootcamp = 'DevMountain' WHERE id = 25;
 UPDATE tekcampers SET bootcamp = 'Trilogy Education' WHERE id = 33;
 
 UPDATE tekcampers SET bootcamp = 'SMU Coding Bootcamp' WHERE id = 21;
+
+-- Adding bootcamp column to ta-emilios and populating
+
+ALTER TABLE `ta-emilios` ADD bootcamp VARCHAR(20);
+
+UPDATE `ta-emilios` SET bootcamp = ( SELECT bootcamp FROM tekcampers WHERE id = `ta-emilios`.id);
