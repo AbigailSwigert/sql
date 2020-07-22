@@ -276,3 +276,25 @@ VALUES ('Reading', 1),
 ('Playing Soccer', 36),
 ('Playing Soccer', 16);
 
+-- Creating aggregate table of my ta team members matched with their hobbies
+
+SELECT hobbies.hobby, `ta-emilios`.first_name FROM hobbies INNER JOIN `ta-emilios` ON hobbies.student_id=`ta-emilios`.id;
+
+-- Adding bootcamp column to tekcampers and populating
+
+ALTER TABLE tekcampers 
+ADD bootcamp VARCHAR(20);
+
+UPDATE tekcampers SET bootcamp = 'Coding Dojo' WHERE id = 6;
+
+UPDATE tekcampers SET bootcamp = 'Coding Dojo' WHERE id = 12;
+
+UPDATE tekcampers SET bootcamp = 'Coding Dojo' WHERE id = 7;
+
+UPDATE tekcampers SET bootcamp = 'DevMountain' WHERE id = 17;
+
+UPDATE tekcampers SET bootcamp = 'DevMountain' WHERE id = 25;
+
+UPDATE tekcampers SET bootcamp = 'Trilogy Education' WHERE id = 33;
+
+UPDATE tekcampers SET bootcamp = 'SMU Coding Bootcamp' WHERE id = 21;
