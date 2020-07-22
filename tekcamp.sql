@@ -227,3 +227,51 @@ SELECT first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'monica';
 
 SELECT * FROM `ta-emilios`;
+
+-- Adding in more tekcampers education
+
+UPDATE tekcampers SET education = 'Some College' WHERE first_name = 'Devon';
+
+UPDATE tekcampers SET education = 'Some College' WHERE last_name = 'Kol';
+
+UPDATE tekcampers SET education = 'Bachelors Degree' WHERE first_name = 'Tyler';
+
+UPDATE tekcampers SET education = 'Masters Degree' WHERE first_name = 'Vani';
+
+UPDATE `ta-emilios` SET education = 'Some College' WHERE first_name = 'Devon';
+
+-- Adding hobbies table
+
+CREATE TABLE hobbies (
+hobby VARCHAR(20) NOT NULL,
+student_id INT NOT NULL,
+FOREIGN KEY (student_id) REFERENCES tekcampers(id)
+);
+
+INSERT INTO hobbies(hobby, student_id)
+VALUES ('Reading', 1),
+('Motorcycle Riding', 10),
+('Golfing', 6),
+('Cattle Rustling', 2),
+('Gardening', 31),
+('Reading', 19),
+('Aerial Yoga', 17),
+('Running', 35),
+('Working Out', 14),
+('Pickle Ball', 12),
+('Engineering w/ Kids', 5),
+('Jiu Jitsu', 7),
+('Writing', 11),
+('Cooking', 33), 
+('Listening to Music', 4),
+('Hockey', 25),
+('Longboarding', 21),
+('Growing Hot Peppers', 30),
+('Interior Decoration', 13),
+('Gaming', 18),
+('Gaming', 29),
+('Gaming', 15),
+('Eating', 8),
+('Eating', 37),
+('Playing Soccer', 36),
+('Playing Soccer', 16);
