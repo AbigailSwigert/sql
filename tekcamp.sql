@@ -182,48 +182,48 @@ last_name VARCHAR(20),
 gender CHAR(1),
 education VARCHAR(20));
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'abigail';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'adam';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'christian';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'devon';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'jose';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'michael';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'phoenix';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'gabe';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'julian';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'marcelo';
 
-INSERT INTO `ta-emilios`(first_name, last_name, gender, education)
-SELECT first_name, last_name, gender, education FROM tekcampers
+INSERT INTO `ta-emilios`(id, first_name, last_name, gender, education)
+SELECT id, first_name, last_name, gender, education FROM tekcampers
 WHERE first_name = 'monica';
 
 SELECT * FROM `ta-emilios`;
@@ -275,3 +275,4 @@ VALUES ('Reading', 1),
 ('Eating', 37),
 ('Playing Soccer', 36),
 ('Playing Soccer', 16);
+
