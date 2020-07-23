@@ -21,4 +21,3 @@ For these exercises, create a Database Schema Diagram for the following scenario
 4. A university wants to set up a system for managing their students and student advisors.  Once a student chooses their major, they are assigned a student advisor that has experience in that particular major.   Once assigned, the advisor can help them get through the major they have selected.  The university wants to keep track of all the majors, students, and advisors.  Design a relational database schema to model the system.  
 
 5. A drop shipping website wants to keep track of their customers, products, and vendors.  They also want to keep track of the orders that customers have placed.  Create a relational database schema to model all of the data the drop shipping website needs.   
-
